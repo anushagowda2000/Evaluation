@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+
+<script>
+function add(){           
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+            document.getElementById("result").value = parseInt(num1) + parseInt(num2);
+            
+        } 
+function sub(){
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+    document.getElementById("result").value = parseInt(num1) - parseInt(num2);           
+           
+}
+function mul(){
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+    document.getElementById("result").value = parseInt(num1)  * parseInt(num2);
+    
+}  
+function div(){
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+    document.getElementById("result").value = parseInt(num1) / parseInt(num2);            
+} 
+</script>
+<style>
+    form{
+        margin: auto;
+        border: 2px solid rgb(235, 10, 10);
+        width: 400px;
+        height: 460px;
+    }
+    .op{
+        border:2px solid black;
+        width:100px;
+        height:40px;
+        margin-left:20px;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 2px;
+    }
+    .alg{
+        margin-left:50px;
+        margin-top: 30px;
+
+    }
+    input[type=text]{
+        font-size: 20px;
+        border:3px solid black;
+    }
+    button{
+        font-size: 20px;
+        border:3px solid black;
+        padding:5px;
+    }
+
+    label{
+        font-size: 25px ;
+        color:rgb(240, 248, 243);
+    }
+</style>
+</head>
+<body style="background-color:rgb(41, 53, 49)  ;">
+   
+ <form> <div class="alg"> 
+        <div>
+            <label> <b>Enter First Number : </b></label>
+            <input id="num1" type="text">
+        </div>
+        <br>
+        <div>
+            <label> <b>Enter Second Number : </b></label>
+            <input id="num2" type="text">
+        </div>
+       
+        <br>
+        
+        <button  type ="button" onclick="add()" value="Addition"> + </button>  &nbsp;
+        <button type ="button"  onclick="sub()" value="Subtraction"> - </button><br><br>
+        <button type ="button"onclick="mul()" value="Multiplication"> X </button>&nbsp;
+        <button type ="button"onclick="div()" value="Division"> /</button><br><br>
+        <button type ="reset" value="reset"> RESET</button>&nbsp;
+       
+    <div>
+        <br>
+     <label><b> Result :</b> </label>
+     <input type="text"  id="result">
+     <!-- <div class="op" id="result" > </div> -->
+    </div>
+</form>
+
+</body>
+</html>

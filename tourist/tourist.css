@@ -1,0 +1,17 @@
+header {
+  background-color: rgb(90, 87, 87);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.tourist-attractions {
+  display: flex;
+  justify-content: space-around; 
+}
+.images a,img{
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+   margin: 10px;
+   margin-right: 450px; 
+}
